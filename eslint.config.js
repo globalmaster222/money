@@ -1,0 +1,2 @@
+import js from '@eslint/js';
+export default [js.configs.recommended,{files:['**/*.js'],languageOptions:{ecmaVersion:'latest',sourceType:'module',globals:{window:'readonly',document:'readonly',localStorage:'readonly',confirm:'readonly',setTimeout:'readonly',URL:'readonly',Blob:'readonly',structuredClone:'readonly',location:'readonly',process:'readonly',globalThis:'readonly'}},rules:{'no-unused-vars':['warn',{argsIgnorePattern:'^_',varsIgnorePattern:'^_'}]}}];
